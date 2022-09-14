@@ -6,49 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./imagenes/GENERAL/LOGO FAVICON.png">
     <link rel="stylesheet" href="./styles/styles.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Punch Marketing</title>
 </head>
 <body id="body-index">
     <header>
-        <img src="./imagenes/GENERAL/LOGO ORIGINAL.png" alt="Logo de la pagina">          
-        <nav>
-            <ul>
-                <li>Inicio</li>
-                <div class="rectanguloheader"> </div>
-                <li>
-                    <a href="./pages/Nosotros.html">Nosotros</a>
-                </li>
-                <div class="rectanguloheader"> </div>
-                <li>
-                    <a href="./pages/Servicios.html">Servicios</a>
-                </li>
-                <div class="rectanguloheader"> </div>
-                <li>
-                    <a href="./pages/Clientes.html">Clientes</a>
-                </li>
-                <div class="rectanguloheader"> </div>
-                <li>
-                    <a href="./pages/Contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./imagenes/GENERAL/LOGO ORIGINAL.png" alt="logo original">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/Nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/Servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/Clientes.html">Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/Contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <section class="slider">
-          <img id="sliderprincipal-index" src="./imagenes/INDEX/SLIDER PRINCIPAL.png" alt="Slider principal">
-          <h5 id="textosliderindex">Creamos la identidad que tu marca merece</h5>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./imagenes/INDEX/SLIDER PRINCIPAL.png" class="d-block w-100" alt="slider1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imagenes/INDEX/SLIDER 2.png" class="d-block w-100" alt="slider2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./imagenes/INDEX/SLIDER 3.png" class="d-block w-100" alt="slider3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
         <section class="seccionquelogramos-index">
             <img id="imagenquelogramosindex" src="./imagenes/INDEX/Que logramos.png" alt="que logramos">
             <div>
                 <h5>Qué logramos</h5>
                 <h3>Marcas con identidad</h3>
-                <P>Creamos la identidad de tu marca, dándole 
-                el valor que necesita para posicionarse 
-                adecuadamente y transmitir su esencia. </P>
-                <article>
-                    <input id="conocenosquelogramos" class="botonBlanco" type="button" value="Conócenos">
-                    <input class="botonAzul" type="button" value="Contáctanos">
+                <P>Creamos la identidad de tu marca, dándole el valor que necesita para posicionarse adecuadamente y transmitir su esencia. </P>
+                <article id="botonesquelogramos">
+                    <button  class="botonBlanco" type="button" class="btn btn-primary">Conócenos</button>
+                    <button  class="botonAzul" type="button" class="btn btn-primary">Contáctanos</button>
                 </article>
             </div>       
         </section>
@@ -60,7 +91,7 @@
                     <img src="./imagenes/INDEX/Desarrollo Web - index.png" alt="Desarrollo web">
                     <h4>Desarrollo Web</h4>
                     <span>Construimos sitios web optimizados adaptables a todos los dispositivos.</span>
-                    <input id="botondesarrolloweb" class="botonBlanco" type="button" value="Conoce más">
+                    <button id="botondesarrolloweb" class="botonBlanco" type="button" class="btn btn-primary">Conoce más</button>
                 </article>
                 <article>    
                     <img class="separadorservicios" src="./imagenes/INDEX/SEPARADOR SERVICIOS.png" alt="separadorservicios">
@@ -69,16 +100,16 @@
                     <img src="./imagenes/INDEX/branding - index.png" alt="Branding">
                     <h4 >Branding</h4>
                     <span>Desarrollamos la identidad de tu marca.</span>
-                    <input id="botonbranding" class="botonBlanco" type="button" value="Conoce más">
+                    <button id="botonbranding" class="botonBlanco" type="button" class="btn btn-primary">Conoce más</button>
                 </article>    
                 <article>    
                     <img class="separadorservicios" src="./imagenes/INDEX/SEPARADOR SERVICIOS.png" alt="separadorservicios">
                 </article>
                 <article>    
-                    <img src="/WEB/imagenes/INDEX/Printing - index.png" alt="Printing">
+                    <img src="./imagenes/INDEX/Printing - index.png" alt="Printing">
                     <h4>Printing</h4>
                     <span>Plasmamos la esencia de tu marca en material impreso.</span>
-                    <input id="botonprinting" class="botonBlanco" type="button" value="Conoce más">
+                    <button id="botonprinting" class="botonBlanco" type="button" class="btn btn-primary">Conoce más</button>
                 </article>    
             </div>
         </section>
@@ -94,7 +125,7 @@
                 <img src="./imagenes/INDEX/PROYECTO 2.png" alt="Proyecto Glorious">
             </div>
             <br>
-            <input id="botonnuestrosproyectos" class="botonBlanco" type="button" value="Vermás">
+            <button id="botonnuestrosproyectos" class="botonBlanco" type="button" class="btn btn-primary">Ver más</button>
         </section>
         <br>
         <img class="separadorplomo" src="./imagenes/GENERAL/SEPARADOR PLOMO.png" alt="separadorplomo">
@@ -170,5 +201,7 @@
         <img id="separadorfooter" src="./imagenes/GENERAL/SEPARADOR FOOTER.png" alt="separadorfooter">
         <p id="creditos">2022 © Punch Marketing. All Rights reserved</p>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

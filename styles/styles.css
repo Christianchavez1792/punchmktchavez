@@ -25,6 +25,7 @@ body{
 
     header{
         grid-area: header;
+        width: 100%;
         display:flex;
         flex-direction: row;
         justify-content: space-around;
@@ -54,29 +55,12 @@ body{
         height: 4500px;
     }
 
-    #sliderprincipal-index{
-        grid-area: sliderprincipal;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        vertical-align: middle;
-    }
-
-    #textosliderindex{
-        width: 600px;
-        font-size: 80px;
-        color:white;
-        position:relative;
-        top: -750px;
-        left: 400px;
-    }
-
     .seccionquelogramos-index{
         grid-area: quelogramos;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: -600px;
+        margin-top: 0px;
     }
     .seccionquelogramos-index div{
         width: 800px;
@@ -494,12 +478,12 @@ footer h4{
 
 h5{
     color: #51C3C8;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 h3{
     color: #0B5078;
-    font-size: 60px;
+    font-size: 80px;
     animation-name: animacioncolor;
     animation-duration: 3s;
     animation-iteration-count: 3;
@@ -584,38 +568,6 @@ label{
 
 
 @media screen and (max-width: 480px) {
-
-    header{
-        justify-content: space-around;
-        align-items: right;
-    }
-
-    header ul{
-        width: 0px;
-        justify-content: space-evenly;
-    } 
-
-    .slider{
-        height: 300px;
-    }
-
-    #sliderprincipal-index{
-        display: flex;
-        justify-content: center;
-        width: 200%;
-        vertical-align: middle;
-        height: 300px;
-    } 
-
-    #textosliderindex{
-        width: 250px;
-        font-size: 40px;
-        color:white;
-        position:relative;
-        top: -320px;
-        left: 80px;
-        text-align: left;
-    }
 
     .seccionquelogramos-index{
         position: relative;
