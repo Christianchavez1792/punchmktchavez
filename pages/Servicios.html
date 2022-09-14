@@ -11,34 +11,64 @@
 </head>
 <body>
     <header>
-        <img src="../imagenes/GENERAL/LOGO ORIGINAL.png" alt="Logo de la pagina">
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a> 
-                </li>
-                <img src="../imagenes/GENERAL/SEPARADOR HEADER.png" alt="separadorheader">
-                <li>
-                    <a href="./Nosotros.html">Nosotros</a>
-                </li>
-                <img src="../imagenes/GENERAL/SEPARADOR HEADER.png" alt="separadorheader">
-                <li>
-                    <a href="./Servicios.html">Servicios</a>
-                </li>
-                <img src="../imagenes/GENERAL/SEPARADOR HEADER.png" alt="separadorheader">
-                <li>
-                    <a href="./Clientes.html">Clientes</a>
-                </li>
-                <img src="../imagenes/GENERAL/SEPARADOR HEADER.png" alt="separadorheader">
-                <li>
-                    <a href="./Contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="../imagenes/GENERAL/LOGO ORIGINAL.png" alt="logo original">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/Nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/Servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/Clientes.html">Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main id="mainservicios">
-        <section id="sliderservicios">
-            <img src="../imagenes/SERVICIOS/SLIDER SERVICIOS.png" alt="slider servicios">
+        <section class="slider">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../imagenes/INDEX/SLIDER 3.png" class="d-block w-100" alt="slider3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../imagenes/INDEX/SLIDER 2.png" class="d-block w-100" alt="slider2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../imagenes/INDEX/SLIDER PRINCIPAL.png" class="d-block w-100" alt="slider1">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
         <article>
             <h5>A nivel Digital</h5>
