@@ -1,0 +1,60 @@
+$colorul: #51C3C8;
+
+h5{
+    color: #51C3C8;
+    font-size: 50px;
+    }
+    
+    h3{
+    color: #0B5078;
+    font-size: 80px;
+    animation-name: animacioncolor;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    }
+    
+    @keyframes animacioncolor{
+    0%{
+        color: #0B5078;
+    }
+    50%{
+        color: #51C3C8;
+    }
+    100%{
+        color:black
+    }
+    }
+    
+    
+    h4{
+    color: #0B5078;
+    font-size: 30px;
+    }
+    
+    h6{
+    color: #51C3C8;
+    font-size: 23px;
+    }
+    
+    
+    span{
+    color: #848688;
+    font-size: 25px;
+    text-align: center;
+    }
+    
+    p{
+    color: #848688;
+    font-size: 30px;
+    }
+
+    
+label{
+    color: #0B5078;
+    font-size: 30px;
+    }
+
+    @font-face {
+        font-family: bahnschrift;
+        src: url("../fonts/bahnschrift.ttf");
+        }

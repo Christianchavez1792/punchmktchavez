@@ -1,0 +1,17 @@
+header{    
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  ul{
+    font-family: bahnschrift;
+    src: url("../fonts/bahnschrift.ttf");
+    display: flex;
+    color: $colorul
+    }
+    li{
+        a{
+            font-size: 80px;
+        }
+    }
+}
