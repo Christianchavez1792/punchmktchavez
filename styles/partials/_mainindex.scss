@@ -18,6 +18,10 @@ main{
         padding-left: 80px;
         h5{
             margin-top: -80px;
+            color: map-get($colors, colorh5);
+        }
+        h3{
+            color: map-get($colors, colorh3);
         }
         article{
             display: flex;

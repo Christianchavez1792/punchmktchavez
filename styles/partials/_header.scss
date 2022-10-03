@@ -7,7 +7,7 @@ header{
     font-family: bahnschrift;
     src: url("../fonts/bahnschrift.ttf");
     display: flex;
-    color: $colorul
+    color: map-get($colors, textonavbar);
     }
     li{
         a{
