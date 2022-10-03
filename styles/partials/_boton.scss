@@ -1,37 +1,22 @@
 
 .botonBlanco{
+    @extend %botondefault;
     color: #0B5078;
     background-color: white;
     border-color: #51C3C8;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 10px;
-    width: 220px;
-    height: 50px;
-    font-size: 30px;
     }
     
     .botonAzul{
+    @extend %botondefault;
     color: white;
     background-color: #0B5078;
     border-color: #0B5078;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 10px;
-    width: 220px;
-    height: 50px;
-    font-size: 30px;
     }
     
     .botonCeleste{
+    @extend %botondefault;
     color: white;
     background-color: #51C3C8;
     border-color: #51C3C8;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 10px;
-    width: 220px;
-    height: 50px;
-    font-size: 30px;
     }
     

@@ -67,40 +67,31 @@ label {
   font-family: bahnschrift;
   src: url("../fonts/bahnschrift.ttf");
 }
-.botonBlanco {
-  color: #0B5078;
-  background-color: white;
-  border-color: #51C3C8;
+.botonCeleste, .botonAzul, .botonBlanco {
   border-width: 3px;
   border-style: solid;
   border-radius: 10px;
   width: 220px;
   height: 50px;
   font-size: 30px;
+}
+
+.botonBlanco {
+  color: #0B5078;
+  background-color: white;
+  border-color: #51C3C8;
 }
 
 .botonAzul {
   color: white;
   background-color: #0B5078;
   border-color: #0B5078;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 10px;
-  width: 220px;
-  height: 50px;
-  font-size: 30px;
 }
 
 .botonCeleste {
   color: white;
   background-color: #51C3C8;
   border-color: #51C3C8;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 10px;
-  width: 220px;
-  height: 50px;
-  font-size: 30px;
 }
 
 header {
@@ -113,7 +104,7 @@ header ul {
   font-family: bahnschrift;
   src: url("../fonts/bahnschrift.ttf");
   display: flex;
-  color: #51C3C8;
+  color: rgb(81, 195, 200);
 }
 header li a {
   font-size: 80px;
@@ -247,6 +238,10 @@ main {
 }
 .seccionquelogramos-index div h5 {
   margin-top: -80px;
+  color: rgb(81, 195, 200);
+}
+.seccionquelogramos-index div h3 {
+  color: rgb(11, 80, 120);
 }
 .seccionquelogramos-index div article {
   display: flex;
