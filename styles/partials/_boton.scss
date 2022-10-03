@@ -14,9 +14,5 @@
     }
     
     .botonCeleste{
-    @extend %botondefault;
-    color: white;
-    background-color: #51C3C8;
-    border-color: #51C3C8;
+    @include boton ($border: rgb(11, 80, 120), $backcolor: rgb(11, 80, 120), $color: rgb(0, 0, 0) );
     }
-    
