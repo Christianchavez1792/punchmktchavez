@@ -119,88 +119,6 @@ header li a {
   font-size: 80px;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px;
-  justify-content: space-between;
-  height: 4000px;
-  width: 100%;
-}
-
-.seccionquelogramos-index {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0px;
-}
-.seccionquelogramos-index div {
-  width: 50%;
-  padding-left: 80px;
-}
-.seccionquelogramos-index div h5 {
-  margin-top: -80px;
-}
-.seccionquelogramos-index div article {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-  margin-left: 150px;
-  width: 450px;
-}
-
-.separadorplomo {
-  text-align: center;
-  margin: 0 auto;
-  width: 50%;
-  height: 5px;
-}
-
-.seccionquehacemos-index {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.seccionquehacemos-index div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 80%;
-}
-.seccionquehacemos-index div article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 400px;
-  margin-top: 40px;
-}
-.seccionquehacemos-index div article button {
-  margin-top: 40px;
-}
-
-.seccionnuestrosproyectos-index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.seccionnuestrosproyectos-index div {
-  display: flex;
-  justify-content: space-around;
-  width: 1500px;
-  margin-top: 50px;
-}
-
-.seccioncomolohacemos-index {
-  grid-area: proceso;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.seccioncomolohacemos-index img {
-  margin-top: 80px;
-}
-
 .seccionlogosclientesfooter {
   grid-area: clientes;
   position: relative;
@@ -306,4 +224,292 @@ footer span a {
 #creditos {
   text-align: center;
   font-size: 120%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  justify-content: space-between;
+  height: 4000px;
+  width: 100%;
+}
+
+.seccionquelogramos-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+.seccionquelogramos-index div {
+  width: 50%;
+  padding-left: 80px;
+}
+.seccionquelogramos-index div h5 {
+  margin-top: -80px;
+}
+.seccionquelogramos-index div article {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-left: 150px;
+  width: 450px;
+}
+
+.separadorplomo {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  height: 5px;
+}
+
+.seccionquehacemos-index {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seccionquehacemos-index div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+}
+.seccionquehacemos-index div article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin-top: 40px;
+}
+.seccionquehacemos-index div article button {
+  margin-top: 40px;
+}
+
+.seccionnuestrosproyectos-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seccionnuestrosproyectos-index div {
+  display: flex;
+  justify-content: space-around;
+  width: 1500px;
+  margin-top: 50px;
+}
+
+.seccioncomolohacemos-index {
+  grid-area: proceso;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seccioncomolohacemos-index img {
+  margin-top: 80px;
+}
+
+#mainnosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 380px;
+  height: 3000px;
+  width: 100%;
+}
+
+#seccionquienessomos-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+#seccionquienessomos-nosotros p {
+  width: 1500px;
+  font-size: 150%;
+  margin-top: 50px;
+}
+#seccionquienessomos-nosotros img {
+  margin-top: 50px;
+}
+#seccionquienessomos-nosotros button {
+  margin-top: 30px;
+}
+
+#seccionnuestroequipo-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  margin-top: 150px;
+}
+#seccionnuestroequipo-nosotros div {
+  display: flex;
+  flex-direction: column;
+}
+#seccionnuestroequipo-nosotros article {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1500px;
+  margin-top: 50px;
+}
+#seccionnuestroequipo-nosotros aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#seccionnuestroequipo-nosotros aside img {
+  width: 70%;
+}
+#seccionnuestroequipo-nosotros aside h4 {
+  margin-top: 20px;
+}
+#seccionnuestroequipo-nosotros aside h6 {
+  font-size: 150%;
+}
+
+#equipopartedos {
+  margin-top: 40px;
+}
+
+#mainservicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 30px;
+  height: 4000px;
+}
+
+#sliderservicios {
+  text-align: center;
+}
+
+#mainservicios article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#mainservicios h3 {
+  margin-top: -30px;
+}
+
+#mainservicios article aside {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1800px;
+}
+
+#mainservicios article input {
+  margin-top: 80px;
+}
+
+#mainservicios p {
+  width: 800px;
+}
+
+#maincontacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 30px;
+  height: 2000px;
+}
+
+#slidercontacto {
+  text-align: center;
+}
+
+#contacto-contacto {
+  text-align: center;
+}
+
+#contacto-contacto h3 {
+  margin-top: -30px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  width: 1200px;
+  height: 800px;
+  margin-left: 700px;
+}
+
+form aside {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+form article input {
+  width: 500px;
+  height: 50px;
+  border-color: #51C3C8;
+  border-style: solid;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  margin-top: 10px;
+}
+
+form textarea {
+  width: 1100px;
+  height: 50px;
+  border-color: #51C3C8;
+  border-style: solid;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  margin-top: 10px;
+}
+
+#botonenviar {
+  margin-left: 400px;
+}
+
+#mainclientes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  padding-top: 30px;
+  height: 2500px;
+}
+
+#sliderclientes {
+  text-align: center;
+  margin-top: -350px;
+}
+
+#mainclientes section {
+  text-align: center;
+  height: 600px;
+}
+
+#nuestrosclientes-clientes {
+  margin-top: -250px;
+}
+
+#mainclientes h3 {
+  margin-top: -30px;
+}
+
+#logosclientes-clientes {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-top: -700px;
+}
+
+#fotosproyectos {
+  text-align: center;
+  margin-top: -200px;
 }/*# sourceMappingURL=style.css.map */

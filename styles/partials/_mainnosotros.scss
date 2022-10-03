@@ -2,12 +2,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 30px;
-    height: 3500px;
-    }
-    
-    #slidernosotros{
-    text-align: center;
+    padding-top: 380px;
+    height: 3000px;
+    width: 100%;
     }
     
     #seccionquienessomos-nosotros{
@@ -16,55 +13,53 @@
     justify-content: center;
     align-items: center;
     height: 800px;
+        p{
+            width: 1500px;
+            font-size: 150%;
+            margin-top: 50px;
+        }
+        img{
+            margin-top: 50px;
+        }
+        button{
+            margin-top: 30px;
+        }
     }
     
-    #seccionquienessomos-nosotros h3{
-    margin-top: -40px;
-    }
-    
-    #seccionquienessomos-nosotros p{
-    width: 1500px;
-    }
-    
-    #seccionquienessomos-nosotros input{
-    margin-top: 40px;
-    }
     
     #seccionnuestroequipo-nosotros{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 1000px;
-    margin-top: 100px;
+    height: 500px;
+    margin-top: 150px;
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+            article{
+                display: flex;
+                justify-content: space-evenly;
+                width: 1500px;
+                 margin-top: 50px;
+            }
+                aside{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    img{
+                        width: 70%;
+                    }
+                    h4{
+                        margin-top: 20px;
+                    }
+                    h6{
+                        font-size: 150%;
+                    }
+                }
     }
-    
-    #seccionnuestroequipo-nosotros h3{
-    margin-top: -30px;
-    }
-    
-    
-    #seccionnuestroequipo-nosotros div{
-    display: flex;
-    flex-direction: column;
-    }
-    
-    #seccionnuestroequipo-nosotros div article{
-    display: flex;
-    justify-content: space-evenly;
-    width: 1800px;
-    }
-    
-    #seccionnuestroequipo-nosotros div article aside{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-    
-    #seccionnuestroequipo-nosotros div article aside h6{
-    margin-top: -30px;
-    }
-    
+        
     #equipopartedos{
     margin-top: 40px;
     }
