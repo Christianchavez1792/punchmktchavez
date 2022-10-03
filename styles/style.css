@@ -312,7 +312,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 380px;
+  padding-top: 30px;
   height: 3000px;
   width: 100%;
 }
@@ -379,36 +379,31 @@ main {
   justify-content: space-between;
   align-content: center;
   padding-top: 30px;
-  height: 4000px;
+  height: 3000px;
 }
-
-#sliderservicios {
-  text-align: center;
-}
-
 #mainservicios article {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-
-#mainservicios h3 {
-  margin-top: -30px;
-}
-
 #mainservicios article aside {
   display: flex;
   justify-content: space-evenly;
   width: 1800px;
 }
-
+#mainservicios article p {
+  width: 800px;
+  font-size: 150%;
+  margin-top: 100px;
+}
+#mainservicios article img {
+  width: 30%;
+  height: 80%;
+  margin-top: 50px;
+}
 #mainservicios article input {
   margin-top: 80px;
-}
-
-#mainservicios p {
-  width: 800px;
 }
 
 #maincontacto {
@@ -419,20 +414,13 @@ main {
   padding-top: 30px;
   height: 2000px;
 }
-
-#slidercontacto {
+#maincontacto #slidercontacto {
   text-align: center;
 }
-
-#contacto-contacto {
+#maincontacto #contacto-contacto {
   text-align: center;
 }
-
-#contacto-contacto h3 {
-  margin-top: -30px;
-}
-
-form {
+#maincontacto form {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -440,16 +428,14 @@ form {
   align-content: flex-start;
   width: 1200px;
   height: 800px;
-  margin-left: 700px;
+  margin-left: 400px;
 }
-
-form aside {
+#maincontacto form aside {
   display: flex;
   justify-content: space-between;
   align-content: flex-start;
 }
-
-form article input {
+#maincontacto form aside article input {
   width: 500px;
   height: 50px;
   border-color: #51C3C8;
@@ -459,8 +445,7 @@ form article input {
   border-right: 0;
   margin-top: 10px;
 }
-
-form textarea {
+#maincontacto form textarea {
   width: 1100px;
   height: 50px;
   border-color: #51C3C8;
@@ -470,46 +455,37 @@ form textarea {
   border-right: 0;
   margin-top: 10px;
 }
-
-#botonenviar {
+#maincontacto form #botonenviar {
   margin-left: 400px;
 }
 
 #mainclientes {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: center;
   padding-top: 30px;
-  height: 2500px;
+  height: 1500px;
 }
-
-#sliderclientes {
+#mainclientes #nuestrosclientes-clientes {
   text-align: center;
-  margin-top: -350px;
+  margin-top: -400px;
 }
-
-#mainclientes section {
-  text-align: center;
-  height: 600px;
-}
-
-#nuestrosclientes-clientes {
-  margin-top: -250px;
-}
-
-#mainclientes h3 {
-  margin-top: -30px;
-}
-
-#logosclientes-clientes {
+#mainclientes #logosclientes-clientes {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
-  margin-top: -700px;
+  margin-top: -500px;
+  width: 60%;
+  margin-left: 400px;
 }
-
-#fotosproyectos {
+#mainclientes #logosclientes-clientes img {
+  width: 10%;
+}
+#mainclientes .fotosproyectos {
   text-align: center;
-  margin-top: -200px;
+  align-content: center;
+  margin-top: -500px;
+  margin-left: 400px;
+  width: 60%;
 }/*# sourceMappingURL=style.css.map */

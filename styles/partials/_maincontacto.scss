@@ -5,60 +5,56 @@
     align-content: center;
     padding-top: 30px;
     height: 2000px;
+        #slidercontacto{
+            text-align: center;
+        }
+        #contacto-contacto{
+            text-align: center;
+        }
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-content:flex-start;
+            width: 1200px;
+            height: 800px;
+            margin-left: 400px;
+            aside{
+                display: flex;
+                justify-content: space-between;
+                align-content: flex-start;
+                article input{
+                    width: 500px;
+                    height: 50px;
+                    border-color: #51C3C8;
+                    border-style: solid;
+                    border-left: 0;
+                    border-top: 0;
+                    border-right: 0;
+                    margin-top: 10px;
+                }
+            }
+            textarea{
+                width: 1100px;
+                height: 50px;
+                border-color: #51C3C8;
+                border-style: solid;
+                border-left: 0;
+                border-top: 0;
+                border-right: 0;  
+                margin-top: 10px;  
+            }
+            #botonenviar{
+                margin-left: 400px;
+                }
+        }          
     }
     
-    #slidercontacto{
-    text-align: center;
-    }
-    
-    #contacto-contacto{
-    text-align: center;
-    }
-    
-    #contacto-contacto h3{
-    margin-top: -30px;
-    }
-    
-    form{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content:flex-start;
-    width: 1200px;
-    height: 800px;
-    margin-left: 700px;
-    }
     
     
-    form aside{
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-start;
-    }
     
-    form article input{
-    width: 500px;
-    height: 50px;
-    border-color: #51C3C8;
-    border-style: solid;
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    margin-top: 10px;
-    }
     
-    form textarea{
-    width: 1100px;
-    height: 50px;
-    border-color: #51C3C8;
-    border-style: solid;
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;  
-    margin-top: 10px;  
-    }
     
-    #botonenviar{
-    margin-left: 400px;
-    }
+    
+   
