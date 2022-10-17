@@ -87,9 +87,9 @@ main{
     }
 }
 
-@media screen (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .seccionquelogramos-index{
         display: flex;
         flex-direction: column;
-        
-}
+    }
+}     
