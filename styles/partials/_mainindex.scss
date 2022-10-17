@@ -86,3 +86,10 @@ main{
         margin-top: 80px;
     }
 }
+
+@media screen (max-width: 768px) {
+    .seccionquelogramos-index{
+        display: flex;
+        flex-direction: column;
+        
+}
