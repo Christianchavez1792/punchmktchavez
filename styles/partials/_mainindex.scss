@@ -15,7 +15,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0px;
+    margin-top: 50px;
     div{
         width: 50%;
         padding-left: 80px;
@@ -42,6 +42,7 @@ main{
     margin: 0 auto;
     width: 50%;
     height: 5px;
+    margin-top: 40px;
 } 
 
 .seccionquehacemos-index{
@@ -49,6 +50,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 60px;
     div{
         display:flex;
         flex-direction: row;
@@ -87,14 +89,18 @@ main{
     flex-direction: column;
     align-items: center;
     img{
-        margin-top: 80px;
+        margin-top: 50px;
     }
     #procesomobile{
         display:none
     }
 }
 
+
 @media screen and (max-width: 768px) {
+    main{
+        height: 3000px;
+    }
     .seccionquelogramos-index{
         display: flex;
         flex-direction: column;
@@ -139,67 +145,6 @@ main{
     }
     #procesodesktop{
         display:none;
-    }
-    #procesomobile{
-        display: inline;
-    }
-    .slider {
-        align-items: center;
-        background: #51C3C8;
-        display: flex;
-        height: 100vh;
-        justify-content: center;
-    }
-    
-    $animationSpeed: 10s;
-    
-    // Animation
-    @keyframes scroll {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(calc(-250px * 3))}
-    }
-    
-    
-    // Styling
-    .slider {
-        background: #51C3C8;
-        height: 120px;
-        margin: auto;
-        overflow:hidden;
-        position: relative;
-        width: 960px;
-        
-        &::before,
-        &::after {
-            content: "";
-            height: 100px;
-            position: absolute;
-            width: 200px;
-            z-index: 2;
-        }
-        
-        &::after {
-            right: 0;
-            top: 0;
-            transform: rotateZ(180deg);
-        }
-    
-        &::before {
-            left: 0;
-            top: 0;
-        }
-        
-        .slide-track {
-            animation: scroll $animationSpeed linear infinite;
-            display: flex;
-            width: calc(200px * 5);
-            margin-left: 200px;
-            margin-top: 30px;
-        }
-        
-        .slide {
-            height: 100px;
-            width: 250px;
-        }
-    }
+    }   
+   
 }
