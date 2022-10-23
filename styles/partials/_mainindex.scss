@@ -8,6 +8,9 @@ main{
     width: 100%;
 }
 
+.slider{
+    width: 100%;
+}
 .seccionquelogramos-index{
     display: flex;
     justify-content: center;
@@ -31,7 +34,8 @@ main{
             width: 450px;
         }
     }
-}
+   
+} 
 
 .separadorplomo{
     text-align: center;
@@ -85,12 +89,117 @@ main{
     img{
         margin-top: 80px;
     }
+    #procesomobile{
+        display:none
+    }
 }
 
 @media screen and (max-width: 768px) {
     .seccionquelogramos-index{
         display: flex;
         flex-direction: column;
+        #imagenquelogramosindex{
+            width: 300px
+        }
+        div{
+            margin-top: 150px;
+            padding-left: 0px;
+            text-align: center;
+            p{
+                font-size: 20px;
+            }
+            article{
+                margin-left: -40px;
+                width: 270px;
+            }
+        }
+    }
+    .seccionquehacemos-index div{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin-left: -105px;
+        span{
+            font-size: 20px;
+            width: 300px;
+        }
+        .separadorservicios{
+            display: none;
+        }
+    }
+    .seccionnuestrosproyectos-index div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 300px;
+        height: 520px;
+        #separadorproyectos{
+            display: none;
+        }     
+    }
+    #procesodesktop{
+        display:none;
+    }
+    #procesomobile{
+        display: inline;
+    }
+    .slider {
+        align-items: center;
+        background: #51C3C8;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
     }
     
-} 
+    $animationSpeed: 10s;
+    
+    // Animation
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-250px * 3))}
+    }
+    
+    
+    // Styling
+    .slider {
+        background: #51C3C8;
+        height: 120px;
+        margin: auto;
+        overflow:hidden;
+        position: relative;
+        width: 960px;
+        
+        &::before,
+        &::after {
+            content: "";
+            height: 100px;
+            position: absolute;
+            width: 200px;
+            z-index: 2;
+        }
+        
+        &::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+    
+        &::before {
+            left: 0;
+            top: 0;
+        }
+        
+        .slide-track {
+            animation: scroll $animationSpeed linear infinite;
+            display: flex;
+            width: calc(200px * 5);
+            margin-left: 200px;
+            margin-top: 30px;
+        }
+        
+        .slide {
+            height: 100px;
+            width: 250px;
+        }
+    }
+}
