@@ -197,17 +197,17 @@ footer section {
 #mapadelsitio {
   display: flex;
   flex-direction: column;
-  margin-top: 90px;
+  margin-top: 180px;
 }
 #mapadelsitio h4 {
   color: #51C3C8;
 }
-#mapadelsitio #mapadelsitioparte1 {
+#mapadelsitio #mapadelsitioparteuno {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 }
-#mapadelsitio #mapadelsitioparte2 {
+#mapadelsitio #mapadelsitiopartedos {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
@@ -242,7 +242,7 @@ footer span a {
   text-align: center;
   margin: 0 auto;
   height: 5px;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 #creditos {
@@ -324,14 +324,14 @@ footer span a {
   footer {
     display: flex;
     flex-direction: column;
-    height: 850px;
+    height: 1000px;
   }
   footer section {
     display: flex;
     flex-direction: column;
   }
   footer .conversemosfooter {
-    margin-top: 400px;
+    margin-top: 100px;
     margin-left: 40px;
     height: 500px;
   }
@@ -348,20 +348,23 @@ footer span a {
     margin-top: 30px;
   }
   #iconotelefono {
-    margin-top: -10px;
+    margin-top: -80px;
+  }
+  #telefono {
+    margin-top: -70px;
   }
   #iconocorreo {
-    margin-top: -40px;
+    margin-top: -120px;
   }
   #correo {
-    margin-top: -30px;
+    margin-top: -110px;
   }
   #iconoubicacion {
-    margin-top: -70px;
+    margin-top: -150px;
     height: 30px;
   }
   #ubicacion {
-    margin-top: -60px;
+    margin-top: -130px;
   }
   #siguenos {
     margin-top: -40px;
@@ -370,22 +373,38 @@ footer span a {
     height: 50px;
     margin-top: -50px;
   }
-  #linkig {
-    margin-top: 50px;
-  }
   #mapadelsitio {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
     margin-left: 20px;
   }
-  #mapadelsitioparte1 {
-    display: flex;
-    margin-top: 20px;
+  #mapadelsitio p {
+    font-size: 20px;
   }
-  #mapadelsitioparte2 {
+  #mapadelsitioparteuno {
     display: flex;
+    flex-direction: row;
     margin-top: 10px;
+    margin-left: 20px;
+  }
+  #mapadelsitiopartedos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  #separadorfooter {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 3px;
+    margin-top: -20px;
+  }
+  #creditos {
+    text-align: center;
+    font-size: 80%;
+    margin-top: 0px;
   }
 }
 main {
