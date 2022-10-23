@@ -195,7 +195,6 @@ footer section {
 }
 
 #mapadelsitio {
-  margin-top: 0px;
   display: flex;
   flex-direction: column;
   margin-top: 90px;
@@ -322,6 +321,72 @@ footer span a {
   section #mapadelsitio article {
     display: flex;
   }
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 850px;
+  }
+  footer section {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .conversemosfooter {
+    margin-top: 400px;
+    margin-left: 40px;
+    height: 500px;
+  }
+  footer .conversemosfooter h3 {
+    font-size: 20px;
+  }
+  footer .conversemosfooter img {
+    height: 20px;
+  }
+  footer .conversemosfooter p {
+    font-size: 20px;
+  }
+  footer .conversemosfooter article {
+    margin-top: 30px;
+  }
+  #iconotelefono {
+    margin-top: -10px;
+  }
+  #iconocorreo {
+    margin-top: -40px;
+  }
+  #correo {
+    margin-top: -30px;
+  }
+  #iconoubicacion {
+    margin-top: -70px;
+    height: 30px;
+  }
+  #ubicacion {
+    margin-top: -60px;
+  }
+  #siguenos {
+    margin-top: -40px;
+  }
+  #logoig {
+    height: 50px;
+    margin-top: -50px;
+  }
+  #linkig {
+    margin-top: 50px;
+  }
+  #mapadelsitio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  #mapadelsitioparte1 {
+    display: flex;
+    margin-top: 20px;
+  }
+  #mapadelsitioparte2 {
+    display: flex;
+    margin-top: 10px;
+  }
 }
 main {
   display: flex;
@@ -419,9 +484,6 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  main {
-    height: 3000px;
-  }
   .seccionquelogramos-index {
     display: flex;
     flex-direction: column;

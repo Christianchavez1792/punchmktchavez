@@ -72,7 +72,6 @@ footer{
 }
 
 #mapadelsitio{
-    margin-top: 0px;
     display: flex;
     flex-direction: column;
     margin-top: 90px;
@@ -203,6 +202,71 @@ footer span{
         }
     }
 
-
-
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 850px;
+        section{
+            display: flex;
+            flex-direction: column;
+        }
+        .conversemosfooter{
+            margin-top: 400px;
+            margin-left: 40px;
+            height: 500px;
+            h3{
+                font-size: 20px;
+            }
+            img{
+                height: 20px;
+                
+            }
+            p{
+                font-size: 20px;
+            }
+            article{
+                margin-top: 30px;
+            }
+        }
+    }   
+    #iconotelefono{
+        margin-top: -10px;
+    }
+    #iconocorreo{
+        margin-top: -40px;
+    }
+    #correo{
+        margin-top: -30px;
+    }
+    #iconoubicacion{
+        margin-top: -70px;
+        height: 30px;
+    }
+    #ubicacion{
+        margin-top: -60px;
+    }
+    #siguenos{
+        margin-top: -40px;
+    }
+    #logoig{
+        height: 50px;
+        margin-top: -50px;
+    }
+    #linkig{
+        margin-top: 50px;
+    }
+    #mapadelsitio{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    #mapadelsitioparte1{
+        display: flex;
+        margin-top: 20px;
+    }
+    #mapadelsitioparte2{
+        display: flex;
+        margin-top: 10px;
+    }
 }
