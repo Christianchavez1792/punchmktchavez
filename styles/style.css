@@ -518,7 +518,7 @@ main {
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 960px;
+    width: 100%;
   }
   #sliderfooter::before, #sliderfooter::after {
     content: "";
@@ -697,7 +697,7 @@ main {
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 960px;
+    width: 100%;
   }
   #mainnosotros #sliderfooter::before, #mainnosotros #sliderfooter::after {
     content: "";
@@ -761,6 +761,97 @@ main {
   margin-top: 80px;
 }
 
+@media screen and (max-width: 768px) {
+  #mainservicios article {
+    display: flex;
+    flex-direction: column;
+  }
+  #mainservicios article aside {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #mainservicios article aside p {
+    margin-left: 50px;
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  #mainservicios article aside img {
+    margin-left: 80px;
+    width: 250px;
+  }
+  #mainservicios article .botonblanco {
+    margin-top: 100px;
+  }
+  #mainservicios article h5 {
+    margin-top: -180px;
+  }
+  .seccionlogosclientesfooter {
+    display: none;
+  }
+  #sliderfooter {
+    align-items: center;
+    background: #51C3C8;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+  }
+  @-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-750px);
+    }
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-750px);
+    }
+  }
+  #sliderfooter {
+    background: #51C3C8;
+    height: 120px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  #sliderfooter::before, #sliderfooter::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
+  #sliderfooter::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  #sliderfooter::before {
+    left: 0;
+    top: 0;
+  }
+  #sliderfooter .slide-track {
+    -webkit-animation: scroll 10s linear infinite;
+            animation: scroll 10s linear infinite;
+    display: flex;
+    width: 1000px;
+    margin-left: 200px;
+    margin-top: 30px;
+  }
+  #sliderfooter .slide {
+    height: 100px;
+    width: 250px;
+  }
+}
 #maincontacto {
   display: flex;
   flex-direction: column;

@@ -30,3 +30,100 @@
                 }
             }
     }
+
+    @media screen and (max-width: 768px){
+        #mainservicios{
+            article{
+                display: flex;
+                flex-direction: column;
+                aside{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    p{
+                        margin-left: 50px;
+                        font-size: 20px;
+                        width: 300px;
+                        text-align: center;
+                        margin-top: 30px;
+                    }
+                    img{
+                        margin-left: 80px;
+                        width: 250px;
+                    }
+                }
+                .botonblanco{
+                    margin-top: 100px;
+                }
+                h5{
+                    margin-top: -180px;
+                }
+            }
+        }
+
+
+        .seccionlogosclientesfooter{
+            display:none;
+        }
+        #sliderfooter {
+            align-items: center;
+            background: #51C3C8;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            width: 100%;
+        }
+        
+        $animationSpeed: 10s;
+        
+        // Animation
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-250px * 3))}
+        }
+        
+        
+        // Styling
+        #sliderfooter {
+            background: #51C3C8;
+            height: 120px;
+            margin: auto;
+            overflow:hidden;
+            position: relative;
+            width: 100%;
+            
+            &::before,
+            &::after {
+                content: "";
+                height: 100px;
+                position: absolute;
+                width: 100%;
+                z-index: 2;
+            }
+            
+            &::after {
+                right: 0;
+                top: 0;
+                transform: rotateZ(180deg);
+            }
+        
+            &::before {
+                left: 0;
+                top: 0;
+            }
+            
+            .slide-track {
+                animation: scroll $animationSpeed linear infinite;
+                display: flex;
+                width: calc(200px * 5);
+                margin-left: 200px;
+                margin-top: 30px;
+            }
+            
+            .slide {
+                height: 100px;
+                width: 250px;
+            }
+        }
+
+    }
