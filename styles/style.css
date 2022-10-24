@@ -123,21 +123,6 @@ header li a {
   font-size: 80px;
 }
 
-.seccionlogosclientesfooter {
-  grid-area: clientes;
-  position: relative;
-  background-color: #51C3C8;
-  text-align: center;
-  height: 170px;
-}
-.seccionlogosclientesfooter img {
-  margin-top: 20px;
-}
-
-#sliderfooter {
-  display: none;
-}
-
 footer {
   grid-area: footer;
   display: flex;
@@ -252,68 +237,6 @@ footer span a {
 }
 
 @media screen and (max-width: 768px) {
-  .seccionlogosclientesfooter {
-    display: none;
-  }
-  #sliderfooter {
-    align-items: center;
-    background: #51C3C8;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-  }
-  @-webkit-keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-750px);
-    }
-  }
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-750px);
-    }
-  }
-  #sliderfooter {
-    background: #51C3C8;
-    height: 120px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    width: 960px;
-  }
-  #sliderfooter::before, #sliderfooter::after {
-    content: "";
-    height: 100px;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
-  }
-  #sliderfooter::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-  }
-  #sliderfooter::before {
-    left: 0;
-    top: 0;
-  }
-  #sliderfooter .slide-track {
-    -webkit-animation: scroll 10s linear infinite;
-            animation: scroll 10s linear infinite;
-    display: flex;
-    width: 1000px;
-    margin-left: 200px;
-    margin-top: 30px;
-  }
-  #sliderfooter .slide {
-    height: 100px;
-    width: 250px;
-  }
   section {
     display: flex;
     flex-direction: column;
@@ -502,6 +425,21 @@ main {
   display: none;
 }
 
+.seccionlogosclientesfooter {
+  grid-area: clientes;
+  position: relative;
+  background-color: #51C3C8;
+  text-align: center;
+  height: 170px;
+}
+.seccionlogosclientesfooter img {
+  margin-top: 20px;
+}
+
+#sliderfooter {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .seccionquelogramos-index {
     display: flex;
@@ -547,6 +485,68 @@ main {
   }
   #procesodesktop {
     display: none;
+  }
+  .seccionlogosclientesfooter {
+    display: none;
+  }
+  #sliderfooter {
+    align-items: center;
+    background: #51C3C8;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+  }
+  @-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-750px);
+    }
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-750px);
+    }
+  }
+  #sliderfooter {
+    background: #51C3C8;
+    height: 120px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+  }
+  #sliderfooter::before, #sliderfooter::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  #sliderfooter::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  #sliderfooter::before {
+    left: 0;
+    top: 0;
+  }
+  #sliderfooter .slide-track {
+    -webkit-animation: scroll 10s linear infinite;
+            animation: scroll 10s linear infinite;
+    display: flex;
+    width: 1000px;
+    margin-left: 200px;
+    margin-top: 30px;
+  }
+  #sliderfooter .slide {
+    height: 100px;
+    width: 250px;
   }
 }
 #mainnosotros {
@@ -595,18 +595,18 @@ main {
   width: 1500px;
   margin-top: 50px;
 }
-#seccionnuestroequipo-nosotros aside {
+#seccionnuestroequipo-nosotros article aside {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#seccionnuestroequipo-nosotros aside img {
+#seccionnuestroequipo-nosotros article aside img {
   width: 70%;
 }
-#seccionnuestroequipo-nosotros aside h4 {
+#seccionnuestroequipo-nosotros article aside h4 {
   margin-top: 20px;
 }
-#seccionnuestroequipo-nosotros aside h6 {
+#seccionnuestroequipo-nosotros article aside h6 {
   font-size: 150%;
 }
 
@@ -614,6 +614,120 @@ main {
   margin-top: 40px;
 }
 
+.seccionlogosclientesfooter {
+  grid-area: clientes;
+  position: relative;
+  background-color: #51C3C8;
+  text-align: center;
+  height: 170px;
+}
+.seccionlogosclientesfooter img {
+  margin-top: 20px;
+}
+
+#sliderfooter {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #mainnosotros {
+    height: 2800px;
+  }
+  #mainnosotros #seccionquienessomos-nosotros {
+    margin-top: -350px;
+  }
+  #mainnosotros #seccionquienessomos-nosotros p {
+    width: 300px;
+    font-size: 15px;
+    text-align: center;
+  }
+  #mainnosotros #seccionquienessomos-nosotros img {
+    height: 250px;
+    width: 250px;
+  }
+  #mainnosotros #separadorplomonosotros {
+    margin-top: -350px;
+  }
+  #mainnosotros #seccionnuestroequipo-nosotros {
+    margin-top: 100px;
+  }
+  #mainnosotros #seccionnuestroequipo-nosotros article {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #mainnosotros #seccionnuestroequipo-nosotros article aside img {
+    height: 150px;
+    width: 150px;
+  }
+  #mainnosotros #seccionnuestroequipo-nosotros #equipopartedos {
+    height: 150px;
+    margin-top: 200px;
+  }
+  #mainnosotros .seccionlogosclientesfooter {
+    display: none;
+  }
+  #mainnosotros #sliderfooter {
+    align-items: center;
+    background: #51C3C8;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+  }
+  @-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-750px);
+    }
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-750px);
+    }
+  }
+  #mainnosotros #sliderfooter {
+    background: #51C3C8;
+    height: 120px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+  }
+  #mainnosotros #sliderfooter::before, #mainnosotros #sliderfooter::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  #mainnosotros #sliderfooter::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  #mainnosotros #sliderfooter::before {
+    left: 0;
+    top: 0;
+  }
+  #mainnosotros #sliderfooter .slide-track {
+    -webkit-animation: scroll 10s linear infinite;
+            animation: scroll 10s linear infinite;
+    display: flex;
+    width: 1000px;
+    margin-left: 200px;
+    margin-top: 30px;
+  }
+  #mainnosotros #sliderfooter .slide {
+    height: 100px;
+    width: 250px;
+  }
+}
 #mainservicios {
   display: flex;
   flex-direction: column;
