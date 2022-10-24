@@ -1,19 +1,22 @@
 #mainclientes{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-content: center;
-    padding-top: 30px;
     height: 1500px;
         #nuestrosclientes-clientes{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
             text-align: center;
-            margin-top: -400px;
+            height: 800px;
+            h5{
+                margin-top: 50px;
+            }
         }
         #logosclientes-clientes{
             display: flex;
             justify-content: space-evenly;
             align-content: center;
-            margin-top: -500px;
             width: 60%;
             margin-left: 400px;
                 img{
@@ -23,12 +26,33 @@
         .fotosproyectos{
             text-align: center;
             align-content: center;
-            margin-top: -500px;
             margin-left: 400px;
             width: 60%;
         }    
     }
+
+@media screen and (max-width: 768px){
+    #mainclientes{
+        height: 500px;
+    }
+    #nuestrosclientes-clientes{
+        height: 600px;
+        #logosclientes-clientes{
+            display: none;
+        }
+        .fotosproyectos{
+            margin: auto;
+            margin-left: 50px;
+            height: 50%;
+            width: 80%;
     
+        }
+    }
+    
+
+
+
+}
    
        
    
